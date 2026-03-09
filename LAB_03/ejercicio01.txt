@@ -1,0 +1,25 @@
+ 1). 
+lista1=[1,2,3]
+lista2=[4,5]
+lista3=lista1++lista2
+lista3
+
+2).
+ :t True
+ :t "Hola mundo"
+ :t [1,2,3]
+
+Que sea fuertemente tipado significa que cuando le das un tipo a una variable no se puede cambiar, es decir, si una variable se define como tipo string no se puede convertir en entero.
+La valuación perezosa evita cálculos repetidos o innecesarios, lo cual se traduce en mejorar el rendimiento en el programa.
+
+3). 
+	a) doble x = x*2
+	   doble 4
+
+	b) esMayorEdad x = x>17
+	   esMayorEdad 15
+
+	c) areCirculo x = pi * x^2
+	   areCirculo 2
+
+4). Los tipos int representan el valor entero de un numero y los float representan el valor decimal de un numero.

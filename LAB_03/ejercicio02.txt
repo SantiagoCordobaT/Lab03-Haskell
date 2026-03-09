@@ -1,0 +1,38 @@
+1). 
+head [10,20,30,40]
+Retorna la cabeza de la lista.
+
+tail [10,20,30,40]
+Retorna la cola de la lista.
+
+take 3 [1..10]
+Toma los primeros tres valores en el rango dado.
+
+drop 4 [1..10]
+Retorna una lista sin los primeros 4 valores del rango.
+
+length [1,2,3,4,5]
+Retorna la longitud de la lista.
+
+Pregunta teorica: Crea una lista con un rango de valores, y se relaciona con la evaluación perezosa pues no genera listas en memoria inmediatamente.
+
+2).
+	a). primerElemento :: [Int] -> Int
+	    primerElemento [] = null
+	    primerElemento (x:xs) = x
+	    primerElemento [1,2,3,4,5]
+
+	b). productoLista :: [Int] -> Int
+	    productoLista [] = 1
+	    productoLista (x:xs) = x * productoLista xs
+	    productoLista [1,2,3]
+
+	c). eliminarNegativos :: [Int] -> [Int]
+	    eliminarNegativos [] = []
+	    eliminarNegativos (x:xs) = if x < 0 then eliminarNegativos xs else x :  eliminarNegativos xs
+            eliminarNegativos [-1,0,1,2,3,4]
+
+	d). invertir :: [a] -> [a]
+	    invertir [] = []
+	    invertir (x:xs) = invertir xs ++ [x]
+	    invertir [1,2,3,4,5]

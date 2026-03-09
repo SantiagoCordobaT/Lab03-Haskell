@@ -1,0 +1,17 @@
+1). 
+	a). sumaCuadrados :: Int -> Int -> Int
+	    sumaCuadrados x y = x^2 + y^2
+	    sumaCuadrados 2 2
+
+	b). dobleLista :: [Int] -> [Int]
+	    dobleLista x = map (*2) x
+	    dobleLista [1,2,3,4,5]
+
+2).	a). clasificarNota :: Float -> String
+	    clasificarNota x | x < 3 = "Reprobado" | x >= 3.0 && x < 4.0 = "En recuperacion" | x > 3.9 = "Aprobado"
+	    clasificarNota 2
+
+	b). fibonacci :: Int -> Int
+	    fibonacci 0 = 0
+	    fibonacci 1 = 1
+	    fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
