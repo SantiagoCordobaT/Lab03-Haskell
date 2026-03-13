@@ -1,0 +1,10 @@
+1) a. Deberia tomar los 5 primero valores de la lista [1...], donde cada uno se multiplica por 2
+   b. Retorna la siguiente lsita : [2, 4, 6, 8, 10]
+   [1...] no crea un bulce infinito gracias a la propiedad de evaluacion perezosa de haskell, pues el lenguaje identifica que PODRIA crear una lista con numeros de 1 en adelante pero no lo hace hasta que se lo digamos.
+
+2) Pasos:
+    1. Haskell reemplaza x e y por (5+7) y (4*3)
+    2. Luego evalua 5+7 y lo compara con 10, es decir 12 > 10, valida el valor de verdad que deberia ser True.
+    3. Como es True, haskell ejecuta unicamente el then y descarta el else, por lo tanto la expresion queda como (4*3)*2.
+    4. Ahora haskell evalua y: (4*3)*2 -> 12*2=24
+       Finalmente el resultado es 24
