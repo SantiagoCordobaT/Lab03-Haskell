@@ -1,0 +1,9 @@
+1)
+  a. incrementarLista xs = map suma xs
+     incrementarLista = \xs -> map suma xs
+
+  b. filtrarPares xs = filter even xs
+     filtrarPares = \xs -> filter even xs
+
+  c. sumarTuplas xs = ... donde x se descompone como x1, y1 y y x2, y2
+     sumarTupla = \(x1, y1) (x2, y2) -> (x1+x2,y1+y2)
